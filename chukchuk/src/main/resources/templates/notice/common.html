@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{index}">
+
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title th:text="${title}">Title</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <form action="/notice" role="form" method="post">
+            <nav class="navbar navbar-expend-md navbar-dark bg-dark fixed-top" th:fragment="menu(menu)">
+
+            </nav>
+        </form>
+    </div>
+</body>
+</html>
